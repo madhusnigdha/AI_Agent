@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI_Agent - Intelligent Governance & Security Framework</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .components {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .component-card {
+            background: #f4f4f4;
+            border-left: 5px solid #667eea;
+            padding: 25px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .component-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .component-card h3 {
+            color: #764ba2;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        
+        .component-card p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .features {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .features li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: background 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background: #764ba2;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+        
+        .tech-badge {
+            display: inline-block;
+            background: #e0e0e0;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .tech-badge.ts {
+            border-left: 3px solid #3178c6;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🛡️ AI_Agent</h1>
+        <p>Intelligent Governance & Security Framework for Autonomous Agents</p>
+    </header>
+    
+    <div class="container">
+        <section class="section">
+            <h2>Overview</h2>
+            <p>AI_Agent is a comprehensive framework designed to provide robust governance, security, and integrity controls for autonomous AI agents. It combines multiple specialized components to ensure safe, compliant, and auditable agent operations.</p>
+            <div class="highlight">
+                <strong>Key Focus:</strong> Safety, Governance, Auditing, Cryptographic Verification, and Intent Enforcement
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Core Components</h2>
+            <div class="components">
+                <div class="component-card">
+                    <h3>🔐 Governance Auditor</h3>
+                    <p>Real-time audit logging and governance enforcement system for agent actions and policy compliance.</p>
+                    <ul class="features">
+                        <li>Intent Classification</li>
+                        <li>Policy Validation</li>
+                        <li>Risk Scoring</li>
+                        <li>Action Rewriting</li>
+                        <li>Audit Logging (JSONL)</li>
+                    </ul>
+                    <a href="https://github.com/madhusnigdha/AI_Agent/tree/master/governance-auditor" class="cta-button">Learn More</a>
+                </div>
+                
+                <div class="component-card">
+                    <h3>🦾 ArmorClaw</h3>
+                    <p>Cryptographic policy enforcement and IAP verification service for enhanced security.</p>
+                    <ul class="features">
+                        <li>Crypto Policy Service</li>
+                        <li>IAP Verification</li>
+                        <li>Policy Enforcement</li>
+                        <li>Intent Drift Detection</li>
+                    </ul>
+                    <a href="https://github.com/madhusnigdha/AI_Agent/tree/master/armorclaw" class="cta-button">Learn More</a>
+                </div>
+                
+                <div class="component-card">
+                    <h3>⚖️ OpenClaw</h3>
+                    <p>Open-source agent framework with extensible plugin architecture and gateway system.</p>
+                    <ul class="features">
+                        <li>Plugin Architecture</li>
+                        <li>Gateway System</li>
+                        <li>Multi-tool Support</li>
+                        <li>Testing Framework</li>
+                    </ul>
+                    <a href="https://github.com/madhusnigdha/AI_Agent/tree/master/openclaw" class="cta-button">Learn More</a>
+                </div>
+                
+                <div class="component-card">
+                    <h3>🛡️ Safe Agent Claw Shield</h3>
+                    <p>Safety-focused agent wrapper with policy enforcement and actions with guardrails.</p>
+                    <ul class="features">
+                        <li>Safety Wrappers</li>
+                        <li>Policy Engine</li>
+                        <li>Gateway Integration</li>
+                        <li>Demo Tools</li>
+                    </ul>
+                    <a href="https://github.com/madhusnigdha/AI_Agent/tree/master/safe-agent-claw-shield" class="cta-button">Learn More</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Technology Stack</h2>
+            <div style="padding: 20px; background: #f9f9f9; border-radius: 8px;">
+                <span class="tech-badge ts">TypeScript</span>
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">Vite</span>
+                <span class="tech-badge">Docker</span>
+                <span class="tech-badge">Cryptography</span>
+                <span class="tech-badge">Jest/Vitest</span>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Quick Start</h2>
+            <div style="background: #f4f4f4; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                <h3>Clone the Repository</h3>
+                <pre style="background: #333; color: #0f0; padding: 15px; border-radius: 5px; overflow-x: auto;">git clone https://github.com/madhusnigdha/AI_Agent.git
+cd AI_Agent</pre>
+            </div>
+            <div style="background: #f4f4f4; padding: 20px; border-radius: 8px;">
+                <h3>Install Dependencies</h3>
+                <pre style="background: #333; color: #0f0; padding: 15px; border-radius: 5px; overflow-x: auto;">npm install
+# or
+pnpm install</pre>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Documentation</h2>
+            <ul class="features" style="font-size: 1.1em;">
+                <li><a href="https://github.com/madhusnigdha/AI_Agent/blob/master/governance-auditor/AGENT_OVERVIEW.md">Agent Overview</a></li>
+                <li><a href="https://github.com/madhusnigdha/AI_Agent/blob/master/governance-auditor/ARCHITECTURE_DIAGRAMS.md">Architecture Diagrams</a></li>
+                <li><a href="https://github.com/madhusnigdha/AI_Agent/blob/master/governance-auditor/docs/">Technical Documentation</a></li>
+                <li><a href="https://github.com/madhusnigdha/AI_Agent/blob/master/CONTRIBUTING.md">Contributing Guidelines</a></li>
+            </ul>
+        </section>
+        
+        <section class="section">
+            <h2>Project Structure</h2>
+            <pre style="background: #f4f4f4; padding: 20px; border-radius: 8px; overflow-x: auto;">
+AI_Agent/
+├── governance-auditor/     # Real-time audit and governance
+├── armorclaw/              # Cryptographic enforcement
+├── openclaw/               # Agent framework & plugins
+└── safe-agent-claw-shield/ # Safety wrappers & policies</pre>
+        </section>
+
+        <div class="highlight">
+            <h3>License</h3>
+            <p>This project is licensed under the MIT License. See LICENSE files in respective directories for details.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 AI_Agent Project. All rights reserved.</p>
+        <p><a href="https://github.com/madhusnigdha/AI_Agent" style="color: #667eea; text-decoration: none;">View on GitHub</a></p>
+    </footer>
+</body>
+</html>
