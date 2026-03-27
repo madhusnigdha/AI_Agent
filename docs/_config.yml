@@ -1,0 +1,32 @@
+title: AI_Agent
+description: Intelligent Governance & Security Framework for Autonomous Agents
+theme: jekyll-theme-minimal
+
+# GitHub Pages settings
+github:
+  owner_name: madhusnigdha
+  owner_url: https://github.com/madhusnigdha
+  zip_url: https://github.com/madhusnigdha/AI_Agent/zipball/master
+  tar_url: https://github.com/madhusnigdha/AI_Agent/tarball/master
+  clone_url: https://github.com/madhusnigdha/AI_Agent
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
+  - README.md
+  - LICENSE
+
+# Site settings
+url: "https://madhusnigdha.github.io/AI_Agent"
+baseurl: "/AI_Agent"
