@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AgentConfig",
+  "description": "Configuration schema for the Safe Agent. Edit agent.config.json to adapt to any problem statement.",
+  "type": "object",
+  "required": ["domain", "agentName", "agentId", "systemPrompt", "activeTools", "policyTemplate"],
+  "properties": {
+    "domain": {
+      "type": "string",
+      "description": "Human-readable label for the agent's domain (e.g. cybersecurity, data-analysis, code-review). No logic depends on this.",
+      "examples": ["cybersecurity", "data-analysis", "code-review", "fraud-detection", "research"]
+    },
+    "agentName": {
+      "type": "string",
+      "description": "Display name for the agent. Used in logs and UI.",
+      "examples": ["ThreatScout", "DataInspector", "CodeGuard"]
+    },
+    "agentId": {
+      "type": "string",
+      "description": "Identifier passed to ArmorClaw for policy tracking. Must match ArmorIQ config.",
+      "examples": ["safe-agent-001"]
+    },
+    "systemPrompt": {
+      "type": "string",
+      "description": "The ONLY field that defines what the agent does. Change this on 23rd to match the problem statement. The ArmorClaw safety layer wraps this prompt automatically."
+    },
+    "activeTools": {
+      "type": "array",
+      "description": "Which tools from the registry to expose. ArmorClaw plans ONLY over these tools. All other tools are inaccessible.",
+      "items": {
+        "type": "string",
+        "enum": ["web_search", "read_file", "write_file", "scan_url", "code_analyze", "db_query", "api_call", "summarize"]
+      },
+      "minItems": 1,
+      "examples": [
+        ["web_search", "read_file", "scan_url", "summarize"],
+        ["read_file", "db_query", "summarize", "write_file"],
+        ["read_file", "code_analyze", "summarize"]
+      ]
+    },
+    "policyTemplate": {
+      "type": "string",
+      "description": "Which policy template from /policies/templates/ to activate at startup.",
+      "enum": ["cybersecurity", "data_analysis", "code_review", "generic"],
+      "default": "generic"
+    }
+  }
+}

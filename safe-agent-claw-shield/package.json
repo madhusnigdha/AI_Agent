@@ -1,0 +1,25 @@
+{
+  "name": "safe-agent-claw-shield",
+  "version": "1.0.0",
+  "description": "Safe Autonomous AI Agent using ArmorClaw SDK — IIT Delhi Hackathon: Claw & Shield",
+  "type": "module",
+  "scripts": {
+    "setup": "node --import tsx gateway/setup.ts",
+    "demo:injection": "node --import tsx demos/demo-injection.ts",
+    "demo:exfiltration": "node --import tsx demos/demo-exfiltration.ts",
+    "demo:drift": "node --import tsx demos/demo-drift.ts",
+    "demo:all": "node --import tsx demos/demo-injection.ts && node --import tsx demos/demo-exfiltration.ts && node --import tsx demos/demo-drift.ts",
+    "start": "node --import tsx gateway/setup.ts && cd ../openclaw && pnpm dev gateway"
+  },
+  "keywords": ["ai-agent", "safety", "armorclaw", "openclaw", "armoriq"],
+  "author": "Claw & Shield Team — IIT Delhi Hackathon 2026",
+  "license": "MIT",
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.8.2",
+    "@types/node": "^22.0.0"
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-agent-core": "*"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "rules": [
+    { "id": "allow_read_file", "action": "allow", "tool": "read_file" },
+    { "id": "allow_db_query", "action": "allow", "tool": "db_query" },
+    { "id": "allow_summarize", "action": "allow", "tool": "summarize" },
+    { "id": "allow_write_file", "action": "allow", "tool": "write_file" },
+    { "id": "deny_db_pci", "action": "deny", "tool": "db_query", "dataClass": "PCI" },
+    { "id": "deny_db_payment", "action": "deny", "tool": "db_query", "dataClass": "PAYMENT" },
+    { "id": "deny_db_phi", "action": "deny", "tool": "db_query", "dataClass": "PHI" },
+    { "id": "deny_scan_url", "action": "deny", "tool": "scan_url" },
+    { "id": "deny_api_call", "action": "deny", "tool": "api_call" },
+    { "id": "deny_code_analyze", "action": "deny", "tool": "code_analyze" },
+    { "id": "deny_bash", "action": "deny", "tool": "bash" },
+    { "id": "deny_exec", "action": "deny", "tool": "exec" }
+  ]
+}

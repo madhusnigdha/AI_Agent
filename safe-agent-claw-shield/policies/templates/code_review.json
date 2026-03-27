@@ -1,0 +1,14 @@
+{
+  "rules": [
+    { "id": "allow_read_file", "action": "allow", "tool": "read_file" },
+    { "id": "allow_code_analyze", "action": "allow", "tool": "code_analyze" },
+    { "id": "allow_summarize", "action": "allow", "tool": "summarize" },
+    { "id": "deny_write_file", "action": "deny", "tool": "write_file" },
+    { "id": "deny_web_search", "action": "deny", "tool": "web_search" },
+    { "id": "deny_api_call", "action": "deny", "tool": "api_call" },
+    { "id": "deny_db_query", "action": "deny", "tool": "db_query" },
+    { "id": "deny_scan_url", "action": "deny", "tool": "scan_url" },
+    { "id": "deny_bash", "action": "deny", "tool": "bash" },
+    { "id": "deny_exec", "action": "deny", "tool": "exec" }
+  ]
+}
